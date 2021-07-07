@@ -22,3 +22,18 @@ result: A, A+1, A+2, ..., B를 모두 xor한 값
 출력
 A부터 B 사이의 모든 정수를 xor했을 때 결과값을 출력합니다.'''
 
+# -*- coding: utf-8 -*-
+# UTF-8 encoding when using korean
+user_input = input()
+# print ("Hello Goorm! Your input is " + user_input)
+
+A = int(user_input.split(' ')[0])
+B = int(user_input.split(' ')[1])
+
+answer = 0
+for n in range(A,B+1):
+	if n == A:
+		answer += n
+	else:
+		answer = answer ^ n
+print(answer)
