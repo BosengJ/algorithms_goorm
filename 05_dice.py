@@ -28,7 +28,18 @@ volume = 0
 for n in range(1,n+1):
 	volume += n ** 3
 
-print(volume)
+print(int(volume% 1000000007))
 
-sum_volume = (n*(n+1)/2) ** 2
-print(sum_volume)
+
+# -*- coding: utf-8 -*-
+# UTF-8 encoding when using korean
+# user_input = input()
+# print ("Hello Goorm! Your input is " + user_input)
+
+n = int(input())
+
+sum_volume = int(n * (n+1) / 2)
+sum_volume *= sum_volume
+
+answer = sum_volume % 1000000007
+print(answer)
