@@ -32,6 +32,7 @@ x	x
 # UTF-8 encoding when using korean
 # user_input = input()
 # print ("Hello Goorm! Your input is " + user_input)
+
 n = int(input())
 n_list = []
 for i in range(n):
