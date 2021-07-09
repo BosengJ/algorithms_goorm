@@ -21,11 +21,14 @@
 # user_input = input()
 # print ("Hello Goorm! Your input is " + user_input)
 
-n = int(input())
+n = 8764891
+
 
 volume = 0
 for n in range(1,n+1):
 	volume += n ** 3
 
-answer = volume % 1000000007
-print(answer)
+print(volume)
+
+sum_volume = (n*(n+1)/2) ** 2
+print(sum_volume)
