@@ -23,7 +23,10 @@
 
 n = int(input())
 
-sum_volume = (n * (n+1) // 2) % 1000000007
-answer = (sum_volume ** 2) % 1000000007
+sum_volume = (n * (n+1) // 2) ** 2
+answer = int(sum_volume) % 1000000007
+
+# sum_volume = (n * (n+1) // 2) % 1000000007
+# answer = (sum_volume ** 2) % 1000000007
 
 print(answer)
